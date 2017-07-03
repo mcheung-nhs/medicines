@@ -1,0 +1,48 @@
+﻿.o-section {
+  margin-top:48px;
+  
+  &--intro {
+    margin-top:0;
+    margin-bottom:80px;
+  }
+
+  &--intro--separate {
+    margin-bottom:32px;
+    padding-bottom: 32px;
+  
+    &:after {
+      background-color: #ddd;
+      content: "";
+      display: block;
+      height: 4px;
+      left: 16px;
+      position: absolute;
+      bottom: 0;
+      width: 130px;
+    }
+         
+    @include media(desktop) {
+      margin-bottom:60px;
+      padding-bottom: 0;
+
+      &:after {
+      bottom: 12px;
+      }
+
+    }
+     
+  }
+
+
+  &__header {
+
+    @include media(mobile) {
+      margin-left:1em;
+    }
+
+    @include media(tablet) {
+      margin-left:1em;
+    }
+
+  }
+}

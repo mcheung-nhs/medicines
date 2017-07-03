@@ -1,0 +1,73 @@
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+h1 {
+font-size: 1.5rem;
+}
+
+blockquote {
+font-style: italic;
+}
+
+h2 {
+font-size: 1.4rem;
+}
+
+h3 {
+font-size: 1.2rem;
+}
+
+h5 {
+font-size: 1rem; font-weight: 100;
+}
+
+p, li {
+font-size: .9rem;
+}
+
+
+/**umb_name:H2*/
+h2{font-size: 32px !important;
+font-weight: bold !important;}
+
+/**umb_name:H3*/
+h3{font-size:24px;}
+
+/**umb_name:H4*/
+h4{font-weight:bold;}
+
+
+/**umb_name:Alert callout*/
+.c-callout__alert {
+  background-color:#fffbcc;
+  background-image:url(/assets/icons/yellow-exclamation.png);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  border:6px solid #ffed00;
+  display:block;
+  font-weight:bold;
+  padding:30px 20px 30px 85px;
+}
+
+/**umb_name:Info callout*/
+.c-callout__info {
+  background-image:url(/assets/icons/blue-info.png);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  border:6px solid #0065b6;
+  display:block;
+  font-weight:bold;
+  margin:40px 0;
+  padding:30px 20px 30px 85px;
+}
+
+/**umb_name:Emergency callout*/
+.c-callout__emergency {
+  background-color: #fbe8e6;
+  background-image:url(/assests/icons/red-exclamation.png);
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  border:6px solid #d81e05;
+  display:block;
+  font-weight:bold;
+  margin:40px 0;
+  padding:30px 20px 30px 85px;
+}

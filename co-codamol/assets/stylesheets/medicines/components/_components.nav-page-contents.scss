@@ -1,0 +1,43 @@
+﻿/*------------------------------------*\
+  #NAV-PAGECONTENT
+\*------------------------------------*/
+
+.c-page-contents {
+
+  &__title {
+    display:none;
+    font-size:20px;
+    line-height:32px;
+
+    @include media(desktop) {
+      display:block;
+    }
+
+  }
+
+  &__list {
+    margin-bottom:32px;
+    margin-top:16px;
+  }
+
+  &__link {
+    text-decoration:none;
+    &:hover {
+      text-decoration:underline;
+    }
+    &:active {
+      text-decoration:underline;
+    }
+  }
+
+}
+
+.js-content-fixed {
+  position:fixed;
+  top:0;
+}
+
+.active {
+  color:$colour-link-blue-hover !important;
+  text-decoration:underline;
+}

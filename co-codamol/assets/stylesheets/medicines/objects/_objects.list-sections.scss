@@ -1,0 +1,56 @@
+﻿.o-list-sections {
+  padding-left:2em;
+  counter-reset:item;
+  padding-left:0;
+
+  > li {
+    display:block;
+
+    &:before {
+      content: counter(item) ". ";
+      counter-increment: item;
+      width: 0;
+      display: inline-block;
+    }
+
+  }
+
+  &__item {
+    font-size:28px;
+    font-weight:bold;
+    margin-top:48px !important;
+           
+    @include media(tablet) {
+      font-size:32px;
+    }
+
+    @include media(desktop) {
+      font-size:36px;
+      margin-top:80px !important;
+    }
+
+    &--first {
+      margin-top:8px !important;
+    }
+
+    &:nth-child(n+10) {
+      .o-section__header {
+        margin-left:1.5em;
+      }
+    }
+
+  }
+
+  &__section {
+    font-size:20px;
+
+    @include media(mobile) {
+      margin-top:-1.8em;
+    }
+
+    @include media(tablet) {
+      margin-top:-2em;
+    }
+
+  }
+}
