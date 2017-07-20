@@ -1,0 +1,97 @@
+﻿.c-callout {
+  
+  @include media(mobile) {
+    margin: 16px 0;
+    padding: 16px;
+  }
+
+  @include media(tablet) {
+    margin: 16px 0;
+    padding: 16px;
+  }
+  
+  @include media(desktop) {
+    margin: 32px 0;
+    padding: 32px;
+  }
+    
+  &__alert {
+	  background-color:#fffbcc;
+    background-image:url(../assets/images/icons/yellow-exclamation.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+    border:6px solid #ffed00;
+	  display:block;
+	  font-weight:bold;
+	  padding:30px 20px 30px 85px;
+  
+    @include media(mobile) {
+      background-position:20px 18px;
+      padding:18px 18px 18px 85px;
+    }
+
+    p, li {
+      font-weight:bold;
+    }
+  }
+
+  &__info {
+    background-image:url(../assets/images/icons/blue-info.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+	  border:6px solid #0065b6;
+	  display:block;
+    font-weight:bold;
+	  margin:40px 0;
+	  padding:30px 20px 30px 85px;
+
+    @include media(mobile) {
+      background-position:20px 18px;
+      padding:18px 18px 18px 85px;
+    }
+  }
+
+  &__emergency {
+    background-color: #fbe8e6;
+    background-image:url(../assets/images/icons/red-exclamation.png);
+    background-position: 20px center;
+    background-repeat: no-repeat;
+	  border:6px solid #d81e05;
+	  display:block;
+    font-weight:bold;
+	  margin:40px 0;
+	  padding:30px 20px 30px 85px;
+
+    @include media(mobile) {
+      background-position:20px 18px;
+      padding:18px 18px 18px 85px;
+    }
+  }
+
+  &--warning {
+    background-color: #fdf2d5;
+    border: solid #fada8b;
+    border-width: 4px 0;
+  }
+
+  &--information {
+    background-color: #f0f4f5;
+    border: solid #768692;
+    border-width: 0 0 0 4px;
+  }
+
+  &--attention {
+    border: 8px solid #0072ce;
+  }
+
+  &--severe {
+    background-color:#da291c;
+    color:#fff;
+  }
+
+  &--alert {
+    background-color: #f5e6e4;
+    border-top: 8px solid #da291c;
+  }
+
+}
