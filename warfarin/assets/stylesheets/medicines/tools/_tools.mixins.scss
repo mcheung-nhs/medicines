@@ -1,0 +1,50 @@
+﻿///*------------------------------------*\
+//    #MIXINS
+//\*------------------------------------*/
+
+
+/** Break points **/
+@mixin media($size: false) {
+  @if $size == desktop {
+    @media (min-width: 925px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 641px) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media (max-width: 640px) {
+      @content;
+    }
+  } 
+}
+
+
+/** Font sizes **/
+@mixin font-size($size) {
+
+  @if ($size == h1) {
+    font-size:48px;
+  } 
+  
+  @elseif ($size == h2) {
+    font-size:36px;  
+  }
+
+  @elseif ($size == h3) {
+    font-size:24px;  
+  }
+
+  @elseif ($size == h4) {
+    font-size:20px;  
+  }
+
+  @elseif ($size == p) {
+    font-size:20px;  
+  }
+
+  @else {
+    @warn "#($size) is not valid or has not been defined. See tools/_tools.mixins.scss for existing sizes."
+  }
+}

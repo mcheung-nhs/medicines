@@ -1,0 +1,29 @@
+﻿.c-audioplayer {
+
+  background: #f0f4f5;
+  padding: 12px;
+
+  &__playbutton {
+    background: url(/medicines/assets/images/icons/play-icon.png) left no-repeat;
+    border: 0;
+    cursor: pointer;
+    height: 69px;
+    line-height: normal;
+    padding-left: 85px;
+    text-align: left;
+      
+    &text {
+      color: #005eb8;
+      text-decoration: underline;
+    }  
+  }
+
+}
+
+.c-pronunciation {
+  font-weight: bold;
+}
+
+.c-audio-hidden {
+  display: none;
+}

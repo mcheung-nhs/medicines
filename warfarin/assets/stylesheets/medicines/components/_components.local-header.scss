@@ -1,0 +1,18 @@
+﻿.local-header {
+  
+  &__subheader {
+    display:block;
+    font-weight:normal;
+  }
+
+  &__inlinebox {
+    background: #fff;
+    margin-top: 16px;
+    padding: 16px;
+  
+    &-link {
+      color: $colour-link-blue !important;
+    }  
+  }
+
+}
