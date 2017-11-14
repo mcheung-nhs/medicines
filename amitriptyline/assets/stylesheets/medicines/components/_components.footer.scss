@@ -1,0 +1,8 @@
+﻿footer {
+  margin-top:32px;
+
+  @include media(desktop) {
+    margin-top:16px;
+  }
+
+}

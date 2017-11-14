@@ -1,0 +1,21 @@
+﻿.c-back-to-top {
+  display:none;
+}
+
+.js-c-back-to-top-show  {
+  background-color: $colour-blue;
+  border:1px solid #fff;
+  bottom: 15px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 20px;
+  position: fixed;
+  right: 15px;
+  text-decoration: underline;
+  z-index: 1;
+}
+
+.c-back-to-top:focus, .c-back-to-top:visited, .c-back-to-top:link {
+  color: #fff;
+  outline: none;
+}

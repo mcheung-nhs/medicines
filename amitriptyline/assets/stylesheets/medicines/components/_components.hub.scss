@@ -1,0 +1,43 @@
+﻿.hub-list {
+
+  padding-left:0;
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &__item {
+    display:inline;
+    float:left;
+    list-style:none;
+    margin-top:0 !important;
+    padding:0;
+    text-align:center;
+    width:48%;
+    
+    &:last-child {
+      margin-left:4%;
+    }
+  }
+
+  &__link {
+    background:$colour-light-blue;
+    border:2px solid $colour-blue;
+    display:block;
+    font-weight: bold;
+    padding:40px 10px;
+    text-decoration: none;
+    width:100%;
+  
+    &:focus, &:hover {
+      background:$colour-blue;
+      color:#fff;
+    }
+
+    @include media(mobile) {
+      min-height:140px;
+    }
+  }
+}
